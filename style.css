@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    background-color: #0f132e;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50rem;
+    min-height: 60rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #536d88;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px;
+}
+
+.container h1 {
+    font-size: 4rem;
+    color: #1b1b1b;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.insert {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu button {
+    position: relative;
+    width: 5rem;
+    padding: 2px;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+.menu button:hover {
+    cursor: pointer;
+    top: -2px;
+}
+
+#text-box {
+    width: 35rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+#add-btn {
+    width: 4rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+#add-btn:hover {
+    cursor: pointer;
+}
+
+ul {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+ul li {
+    padding: 0.8rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+}
+
+ul .btn-remove {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d3c3c;
+    color: white;
+}
+
+ul li.not-realized span {
+    cursor: pointer;
+}
+
+ul li.realized span {
+    cursor: pointer;
+    text-decoration: line-through;
+    color: rgb(126, 123, 123);
+}
+
+span {
+    width: 100%;
+}
+
